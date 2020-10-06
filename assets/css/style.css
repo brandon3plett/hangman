@@ -1,0 +1,158 @@
+/* Custom CSS Variables */
+:root {
+    --main-txt-color: #4169e1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background: url("../images/sonic-collage-2.jpg");
+    background-repeat: repeat;
+} */
+
+body {
+    background-color: #000000;
+    font-family: sans-serif;
+}
+
+.game-wrapper {
+    /* background: #ffffffcc; */
+    color: var(--main-txt-color);
+    text-align: center;
+    width: 780px;
+    height: auto;
+    margin: 75px auto 0;
+    
+    text-align: center;
+    overflow: hidden;
+}
+
+header {
+    /*font-family: "Faster One", cursive;*/
+    font-family: 'Stalinist One', cursive;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--main-txt-color);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.sonic-image img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.current-word-text {
+    display: block;
+    margin: 25px 0;
+}
+
+#underscores {
+    letter-spacing: 10px;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+
+.key {
+    background: var(--main-txt-color);
+    color: white;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 20%;
+    margin: 7px;
+}
+
+#keys {
+    margin: 50px 0;
+}
+
+#first-row,
+#second-row,
+#third-row {
+    margin-bottom: 7px;
+}
+
+.game-stats > span {
+    display: block;
+    margin: 20px 0;
+}
+
+#wrong-guesses {
+    text-transform: uppercase;
+}
+
+
+/* Modal */
+#modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+    padding-top: 75px;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.modal-content {
+    background: var(--main-txt-color);
+    margin: auto;
+    padding: 50px;
+    border: solid 1px var(--main-txt-color);
+    width: 50%;
+}
+
+.modal-text {
+    color: white;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.play-again {
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    color: black;
+    border: none;
+    border-radius: none;
+    margin: 5px 15px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper {
+        width: 325px;
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 14px;
+    }
+
+    #underscore {
+        margin: auto;
+    }
+
+    .key {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+    }
+}

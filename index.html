@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman - Sonic The Hedgehog Edition</title>
+    <link rel="shortcut icon" href="./assets/images/sonicheadlogo.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <header>
+            <h1>Hangman:<br>Sonic The Hedgehog Edition</h1>
+        </header>
+        <div class="sonic-image">
+            <img src="assets/images/sonicrunning2.gif" />
+        </div>
+        <div>
+            <span class="instructions">Press Or Click Any Key To Get Started!</span>
+            <span class="current-word-text">Current Word:</span>
+            <div id="underscores"></div>
+            <div id="keys">
+                <div id="first-row"></div>
+                <div id="second-row"></div>
+                <div id="third-row"></div>
+            </div>
+            <div class="game-stats">
+                <span>Number Of Guesses Remaining: <span id="guesses-remaining">5</span></span>
+                <span>Guessed Letters: <span id="wrong-guesses"></span></span>
+                <span>Wins: <span id="wins">0</span></span>
+                <span>Losses: <span id="losses">0</span></span>
+            </div>
+        </div>
+        <div id="modal">
+            <div class="modal-content">
+                <span id="modal-text" class="modal-text"></span>
+                <div class="buttons">
+                    <button class="play-again" id="yes">Yes</button>
+                    <button class="play-again" id="no">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/game.js"></script>
+</body>
+
+</html>
