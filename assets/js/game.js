@@ -1,11 +1,7 @@
-//Alphabet array
-let alphabet = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L",
-    "Z", "X", "C", "V", "B", "N", "M"
-];
-
 //Game word list
-let wordList = ["sonic", "tails", "emeralds", "robotnik", "eggman", "zone", "act", "rings", "shield", "mobius", "amy",
-    "shadow", "knuckles", "silver", "rouge"];
+let wordList = ["sonic", "tails", "emeralds", "robotnik", "eggman", "zone", "act",
+    "rings", "shield", "mobius", "amy", "shadow", "knuckles", "silver", "rouge"
+];
 
 //Game counters
 let wins = 0;
@@ -25,6 +21,11 @@ let wrongGuesses = []; //Array for holding wrong guesses
 
 //Function to dynamically create keys to page
 createKeys = () => {
+    //Alphabet array
+    let alphabet = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L",
+        "Z", "X", "C", "V", "B", "N", "M"
+    ];
+    
     alphabet.slice(0, 10).forEach((letter) => {
         let key = document.createElement("button");
         key.className = "key";

@@ -9,30 +9,27 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background: url("../images/sonic-collage-2.jpg");
-    background-repeat: repeat;
-} */
-
 body {
     background-color: #000000;
     font-family: sans-serif;
 }
 
 .game-wrapper {
-    /* background: #ffffffcc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: var(--main-txt-color);
     text-align: center;
-    width: 780px;
+    width: 100%;
+    height: auto;
     height: auto;
     margin: 75px auto 0;
-    
     text-align: center;
     overflow: hidden;
 }
 
 header {
-    /*font-family: "Faster One", cursive;*/
     font-family: 'Stalinist One', cursive;
     margin-bottom: 30px;
     text-align: center;
@@ -135,6 +132,8 @@ img {
     display: inline-block;
 }
 
+
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
 
     .wrapper {
